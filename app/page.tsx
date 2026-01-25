@@ -1,10 +1,11 @@
 import {
-  About,
-  Contact,
-  Experience,
-  Footer,
   Hero,
+  About,
+  Experience,
+  Skills,
   Projects,
+  Contact,
+  Footer,
 } from "./components";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
+      <Skills />
       <Projects />
       <Contact />
       <Footer />

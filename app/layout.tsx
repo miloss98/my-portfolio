@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Milos Stojanovic | Frontend Developer",
+  title: "Miloš Stojanović | Frontend Developer",
   description:
     "A software developer specializing in web development and modern technologies.",
 };

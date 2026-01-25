@@ -17,7 +17,7 @@ export const Contact = () => {
             }
           </p>
           <Button asChild size="lg" className="group">
-            <Link href="mailto:hello@example.com">
+            <Link href="mailto:stojanovic98m@gmail.com">
               Get in touch
               <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
@@ -25,16 +25,22 @@ export const Contact = () => {
           <div className="pt-8 space-y-4">
             <ContactLink
               label="Email"
-              value="hello@example.com"
-              href="mailto:hello@example.com"
+              value="stojanovic98m@gmail.com"
+              href="mailto:stojanovic98m@gmail.com"
+              target="_self"
             />
             <ContactLink
               label="LinkedIn"
-              value="linkedin.com/in/yourname"
-              href="#"
+              value="linkedin.com/in/miloss98/"
+              href="https://www.linkedin.com/in/miloss98/"
+              target="_blank"
             />
-            <ContactLink label="GitHub" value="github.com/yourname" href="#" />
-            <ContactLink label="Twitter" value="@yourhandle" href="#" />
+            <ContactLink
+              label="GitHub"
+              value="github.com/miloss98"
+              href="https://github.com/miloss98"
+              target="_blank"
+            />
           </div>
         </div>
       </div>
@@ -46,10 +52,12 @@ function ContactLink({
   label,
   value,
   href,
+  target,
 }: {
   label: string;
   value: string;
   href: string;
+  target: string;
 }) {
   return (
     <div className="flex items-center justify-between py-3 border-b border-border">
@@ -57,6 +65,7 @@ function ContactLink({
       <Link
         href={href}
         className="text-sm text-foreground hover:text-primary transition-colors"
+        target={target}
       >
         {value}
       </Link>
