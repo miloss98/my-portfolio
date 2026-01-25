@@ -40,8 +40,8 @@ const projects = [
 export const Projects = () => {
   return (
     <section id="projects" className="px-6 md:px-12 lg:px-24 py-20">
-      <div className="max-w-3xl mx-auto space-y-12">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
+      <div className="max-w-5xl mx-auto space-y-12">
+        <h2 className="text-base md:text-lg lg:text-xl font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />
           Projects
         </h2>

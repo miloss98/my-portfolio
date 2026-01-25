@@ -1,11 +1,11 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20">
-      <div className="max-w-6xl mx-auto w-full flex  flex-col lg:flex-row gap-12 lg:gap-60 items-center">
+      <div className="max-w-5xl mx-auto w-full flex  flex-col lg:flex-row gap-12 lg:gap-40 xl:gap-60 items-center">
         <div className="space-y-6">
           <div className="flex items-center gap-6">
             <div className="relative w-24 h-24 md:w-48 md:h-48 rounded-full overflow-hidden ring-2 ring-primary/20 ring-offset-2 ring-offset-background">

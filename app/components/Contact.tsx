@@ -5,8 +5,8 @@ import Link from "next/link";
 export const Contact = () => {
   return (
     <section id="contact" className="px-6 md:px-12 lg:px-24 py-20">
-      <div className="max-w-3xl mx-auto space-y-8">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
+      <div className="max-w-5xl mx-auto space-y-8">
+        <h2 className="text-base md:text-lg lg:text-xl font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />
           Contact
         </h2>
@@ -23,12 +23,14 @@ export const Contact = () => {
             </Link>
           </Button>
           <div className="pt-8 space-y-4">
-            <ContactLink
-              label="Email"
-              value="stojanovic98m@gmail.com"
-              href="mailto:stojanovic98m@gmail.com"
-              target="_self"
-            />
+            <div className="">
+              <ContactLink
+                label="Email"
+                value="stojanovic98m@gmail.com"
+                href="mailto:stojanovic98m@gmail.com"
+                target="_self"
+              />
+            </div>
             <ContactLink
               label="LinkedIn"
               value="linkedin.com/in/miloss98/"
@@ -64,10 +66,11 @@ function ContactLink({
       <span className="text-sm text-muted-foreground">{label}</span>
       <Link
         href={href}
-        className="text-sm text-foreground hover:text-primary transition-colors"
+        className="text-sm text-foreground hover:text-primary transition-colors flex"
         target={target}
       >
         {value}
+        <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
       </Link>
     </div>
   );
