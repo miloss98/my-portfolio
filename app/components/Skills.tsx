@@ -23,9 +23,10 @@ import {
   SiJest,
   SiFastapi,
   SiPostgresql,
+  SiRedux,
+  SiGraphql,
 } from "react-icons/si";
 
-// Top row - moves left
 const skillsTopRow = [
   { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
   { name: "CSS3", icon: SiCss3, color: "#1572B6" },
@@ -41,18 +42,19 @@ const skillsTopRow = [
   { name: "ShadCN", icon: SiShadcnui, color: "#FFFFFF" },
 ];
 
-// Bottom row - moves right
 const skillsBottomRow = [
+  { name: "Redux", icon: SiRedux, color: "#764ABC" },
+  { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
+  { name: "Jest", icon: SiJest, color: "#C21325" },
   { name: "Chart.js", icon: SiChartdotjs, color: "#FF6384" },
   { name: "Strapi", icon: SiStrapi, color: "#4945FF" },
   { name: "Sanity", icon: SiSanity, color: "#F03E2F" },
+  { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
   { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
   { name: "NPM", icon: SiNpm, color: "#CB3837" },
   { name: "Yarn", icon: SiYarn, color: "#2C8EBB" },
   { name: "Vite", icon: SiVite, color: "#646CFF" },
-  { name: "Jest", icon: SiJest, color: "#C21325" },
-  { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
 ];
 
 type Skill = (typeof skillsTopRow)[number];
@@ -72,7 +74,10 @@ function SkillItem({ skill }: { skill: Skill }) {
 
 export function Skills() {
   return (
-    <section id="skills" className="px-6 md:px-12 lg:px-24 py-20">
+    <section
+      id="skills"
+      className="px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
+    >
       <div className="max-w-5xl mx-auto space-y-12">
         <h2 className="text-base md:text-lg lg:text-xl font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />

@@ -1,10 +1,10 @@
-import { Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { IoLogoGithub, IoLogoLinkedin, IoMailOutline } from "react-icons/io5";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20">
+    <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20">
       <div className="max-w-5xl mx-auto w-full flex  flex-col lg:flex-row gap-12 lg:gap-40 xl:gap-60 items-center">
         <div className="space-y-6">
           <div className="flex items-center gap-6">
@@ -38,7 +38,7 @@ export const Hero = () => {
               aria-label="GitHub"
               target="_blank"
             >
-              <Github className="w-5 h-5" />
+              <IoLogoGithub className="w-6 h-6" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/miloss98/"
@@ -46,7 +46,7 @@ export const Hero = () => {
               aria-label="LinkedIn"
               target="_blank"
             >
-              <Linkedin className="w-5 h-5" />
+              <IoLogoLinkedin className="w-6 h-6" />
             </Link>
             <Link
               href="mailto:stojanovic98m@gmail.com"
@@ -54,7 +54,7 @@ export const Hero = () => {
               aria-label="Email"
               target="_self"
             >
-              <Mail className="w-5 h-5" />
+              <IoMailOutline className="w-6 h-6" />
             </Link>
           </div>
         </div>
