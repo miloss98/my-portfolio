@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { experiences } from "../data";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 
 export const Experience = () => {
   return (
@@ -38,12 +38,13 @@ function ExperienceCard({
       <div className="space-y-3">
         <Link
           href={url}
-          className="inline-flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors text-sm md:text-base lg:text-lg"
           target="_blank"
+          className="group/link inline-flex items-center gap-4 text-foreground font-medium hover:text-primary transition-colors text-sm md:text-base lg:text-lg"
         >
           {title} · {company}
-          <ArrowUpRight className="w-4 h-4" />
+          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover/link:text-primary transition-colors" />
         </Link>
+
         <p className="text-muted-foreground text-sm leading-relaxed md:text-base">
           {description}
         </p>

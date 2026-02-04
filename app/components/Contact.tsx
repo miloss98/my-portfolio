@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoLinkedin, IoMailOutline } from "react-icons/io5";
@@ -23,21 +23,21 @@ export const Contact = () => {
           </p>
           <div className="pt-4 space-y-4">
             <ContactLink
-              logo={<IoMailOutline className="w-7 h-7" />}
+              logo={<IoMailOutline className="w-6 h-6" />}
               value="stojanovic98m@gmail.com"
               label={"Email"}
               href="mailto:stojanovic98m@gmail.com"
               target="_self"
             />
             <ContactLink
-              logo={<IoLogoLinkedin className="w-7 h-7" />}
+              logo={<IoLogoLinkedin className="w-6 h-6" />}
               value="linkedin.com/in/miloss98/"
               label={"LinkedIn"}
               href="https://www.linkedin.com/in/miloss98/"
               target="_blank"
             />
             <ContactLink
-              logo={<IoLogoGithub className="w-7 h-7" />}
+              logo={<IoLogoGithub className="w-6 h-6" />}
               value="github.com/miloss98"
               label={"GitHub"}
               href="https://github.com/miloss98"
@@ -74,9 +74,9 @@ function ContactLink({
           {label}
         </span>
         <div className="md:hidden flex p-2 rounded-lg text-primary">{logo}</div>
-        <span className="text-sm md:text-base text-foreground group-hover:text-primary transition-colors flex">
+        <span className="text-sm md:text-base text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
           {value}
-          <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          <ExternalLink className="ml-2 w-4 h-4 text-muted-foreground group-hover:text-primary transition-transform" />
         </span>
       </div>
     </Link>
