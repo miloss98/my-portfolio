@@ -1,18 +1,6 @@
-import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-
-const experiences = [
-  {
-    period: "2022 — Present",
-    title: "Frontend Developer",
-    company: "Rhapsody Media",
-    url: "https://www.rhapsodymedia.com/",
-    description:
-      "Build and maintain critical components used to construct the company's frontend, across the whole product. Work closely with cross-functional teams to implement new features and improve user experience.",
-    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS  "],
-  },
-];
+import { experiences } from "../data";
+import { ArrowUpRight } from "lucide-react";
 
 export const Experience = () => {
   return (
@@ -41,7 +29,6 @@ function ExperienceCard({
   company,
   url,
   description,
-  technologies,
 }: (typeof experiences)[0]) {
   return (
     <div className="group grid sm:grid-cols-[140px_1fr] gap-4">
@@ -60,17 +47,6 @@ function ExperienceCard({
         <p className="text-muted-foreground text-sm leading-relaxed md:text-base">
           {description}
         </p>
-        <div className="flex flex-wrap gap-2 pt-1">
-          {technologies.map((tech) => (
-            <Badge
-              key={tech}
-              variant="secondary"
-              className="text-xs md:text-sm font-medium"
-            >
-              {tech}
-            </Badge>
-          ))}
-        </div>
       </div>
     </div>
   );

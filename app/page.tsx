@@ -4,6 +4,7 @@ import {
   Experience,
   Skills,
   Projects,
+  Certificates,
   Contact,
   Footer,
 } from "./components";
@@ -16,6 +17,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Projects />
+      <Certificates />
       <Contact />
       <Footer />
     </main>

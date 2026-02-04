@@ -4,41 +4,44 @@ import { IoLogoGithub, IoLogoLinkedin, IoMailOutline } from "react-icons/io5";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20">
+    <section
+      id="hero"
+      className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
+    >
       <div className="max-w-5xl mx-auto w-full flex  flex-col lg:flex-row gap-12 lg:gap-40 xl:gap-60 items-center">
         <div className="space-y-6">
-          <div className="flex items-center gap-6">
-            <div className="relative w-24 h-24 md:w-48 md:h-48 rounded-full overflow-hidden ring-2 ring-primary/20 ring-offset-2 ring-offset-background">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="relative w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden ring-2 ring-primary/80 ring-offset-0 ring-offset-background">
               <Image
-                src="/profile.webp"
+                src="/profile-pic.webp"
                 alt="Profile photo"
                 fill
                 className="object-cover object-top"
                 priority
+                sizes="100% 100%"
               />
             </div>
             <div>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-balance">
+              <h1 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-balance">
                 Miloš Stojanović
               </h1>
-              <p className="text-lg md:text-2xl text-primary font-medium mt-1">
+              <p className="text-center md:text-left text-lg md:text-2xl text-primary font-medium mt-1">
                 Frontend Developer
               </p>
             </div>
           </div>
-          <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
-            I build accessible, pixel-perfect digital experiences for the web.
-            Passionate about creating interfaces that blend thoughtful design
-            with robust engineering.
+          <p className="text-muted-foreground text-center md:text-left text-lg leading-relaxed max-w-lg">
+            I build accessible, user-focused web applications using modern
+            frontend technologies.
           </p>
-          <div className="flex items-center gap-4 pt-4">
+          <div className="flex justify-center md:justify-start items-center gap-4 pt-4">
             <Link
               href="https://github.com/miloss98"
               className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
               aria-label="GitHub"
               target="_blank"
             >
-              <IoLogoGithub className="w-6 h-6" />
+              <IoLogoGithub className="w-8 h-8 md:w-7 md:h-7" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/miloss98/"
@@ -46,7 +49,7 @@ export const Hero = () => {
               aria-label="LinkedIn"
               target="_blank"
             >
-              <IoLogoLinkedin className="w-6 h-6" />
+              <IoLogoLinkedin className="w-8 h-8 md:w-7 md:h-7" />
             </Link>
             <Link
               href="mailto:stojanovic98m@gmail.com"
@@ -54,7 +57,7 @@ export const Hero = () => {
               aria-label="Email"
               target="_self"
             >
-              <IoMailOutline className="w-6 h-6" />
+              <IoMailOutline className="w-8 h-8 md:w-7 md:h-7" />
             </Link>
           </div>
         </div>
@@ -63,6 +66,7 @@ export const Hero = () => {
           <NavLink href="#experience" label="Experience" />
           <NavLink href="#skills" label="Skills" />
           <NavLink href="#projects" label="Projects" />
+          <NavLink href="#certificates" label="Certificates" />
           <NavLink href="#contact" label="Contact" />
         </nav>
       </div>

@@ -1,39 +1,42 @@
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Rhapsody Media Website",
     description:
-      "A full-featured e-commerce platform with cart functionality, payment processing, and inventory management. Built with a focus on performance and user experience.",
-    technologies: ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A website for our company Rhapsody Media, built from the scratch, using Next.js, TypeScript, Tailwind CSS and Strapi headless CMS.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Strapi CMS"],
+    liveUrl: "https://www.rhapsodymedia.com/",
   },
   {
-    title: "Task Management App",
+    title: "Ceros Website",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team workspaces.",
-    technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Redesign and development of the Ceros website, focusing on modern design principles and seamless user experience.",
+    technologies: ["Next.js", "TypeScript", "SASS", "GraphQL", "Contember CMS"],
+    liveUrl: "https://www.ceros.com/",
   },
   {
-    title: "Weather Dashboard",
+    title: "Retoucher ROI Calculator",
     description:
-      "A beautiful weather application that displays current conditions and forecasts with interactive charts and location-based data.",
-    technologies: ["Vue.js", "OpenWeather API", "Chart.js", "Vite"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Small application that calculates the return on investment (ROI) for photo retouching services based on various input parameters. Results are displayed using interactive charts and can be exported as a PDF report.",
+    technologies: ["React", "Tailwind CSS", "Chart.js", "React-PDF", "Vite"],
+    liveUrl: "https://www.rhapsodymedia.com/yourroi",
   },
   {
-    title: "Portfolio Generator",
+    title: "John Deere Puzzle Game",
     description:
-      "A tool that helps developers create stunning portfolio websites with customizable templates and easy deployment options.",
-    technologies: ["Node.js", "Express", "MongoDB", "React"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A memory puzzle game designed for John Deere, made to help children improve their cognitive skills while having fun. The game features colorful graphics, engaging sound effects, and multiple difficulty levels to cater to different age groups.",
+    technologies: ["React", "CSS"],
+    liveUrl: "https://jd-puzzle.netlify.app/",
+  },
+  {
+    title: "Coloring Game for John Deere",
+    description:
+      "An interactive dragon coloring game developed for John Deere, allowing children to unleash their creativity by coloring various dragon illustrations using a palette of vibrant colors and tools with ability to save their artwork.",
+    technologies: ["React", "CSS"],
+    liveUrl: " https://dragon-colouring.netlify.app/",
   },
 ];
 
@@ -63,31 +66,23 @@ function ProjectCard({
   description,
   technologies,
   liveUrl,
-  githubUrl,
 }: (typeof projects)[0]) {
   return (
-    <div className="group p-6 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors">
+    <Link
+      href={liveUrl}
+      aria-label={`View ${title} live`}
+      target="_blank"
+      className="group p-6 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors"
+    >
       <div className="space-y-4">
         <div className="flex items-start justify-between gap-4">
           <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
             {title}
           </h3>
-          <div className="flex items-center gap-3">
-            <Link
-              href={githubUrl}
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label={`View ${title} on GitHub`}
-            >
-              <Github className="w-5 h-5" />
-            </Link>
-            <Link
-              href={liveUrl}
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label={`View ${title} live`}
-            >
-              <ArrowUpRight className="w-5 h-5" />
-            </Link>
-          </div>
+
+          <span className="text-muted-foreground group-hover:text-primary transition-colors">
+            <ArrowUpRight className="w-5 h-5" />
+          </span>
         </div>
         <p className="text-muted-foreground text-sm leading-relaxed">
           {description}
@@ -104,6 +99,6 @@ function ProjectCard({
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

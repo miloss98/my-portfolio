@@ -4,6 +4,20 @@ import { Contact } from "./Contact";
 import { Experience } from "./Experience";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
+import { Certificates } from "./Certificates";
+import { ScrollHandler } from "./ScrollHandler";
+import { ScrollToTop } from "./ScrollToTop";
 import { Footer } from "./Footer";
 
-export { Hero, About, Contact, Experience, Skills, Projects, Footer };
+export {
+  Hero,
+  About,
+  Contact,
+  Experience,
+  Skills,
+  Certificates,
+  Projects,
+  ScrollHandler,
+  ScrollToTop,
+  Footer,
+};

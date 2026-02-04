@@ -1,0 +1,58 @@
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiAstro,
+  SiTailwindcss,
+  SiMui,
+  SiChakraui,
+  SiSass,
+  SiShadcnui,
+  SiChartdotjs,
+  SiStrapi,
+  SiSanity,
+  SiGithub,
+  SiNpm,
+  SiYarn,
+  SiVite,
+  SiJest,
+  SiFastapi,
+  SiPostgresql,
+  SiRedux,
+  SiGraphql,
+} from "react-icons/si";
+
+const skillsTopRow = [
+  { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+  { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+  { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+  { name: "React", icon: SiReact, color: "#61DAFB" },
+  { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
+  { name: "Astro", icon: SiAstro, color: "#FF5D01" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+  { name: "Material UI", icon: SiMui, color: "#007FFF" },
+  { name: "Chakra UI", icon: SiChakraui, color: "#319795" },
+  { name: "SASS", icon: SiSass, color: "#CC6699" },
+  { name: "ShadCN", icon: SiShadcnui, color: "#FFFFFF" },
+];
+
+const skillsBottomRow = [
+  { name: "Redux", icon: SiRedux, color: "#764ABC" },
+  { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
+  { name: "Jest", icon: SiJest, color: "#C21325" },
+  { name: "Chart.js", icon: SiChartdotjs, color: "#FF6384" },
+  { name: "Strapi", icon: SiStrapi, color: "#4945FF" },
+  { name: "Sanity", icon: SiSanity, color: "#F03E2F" },
+  { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+  { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
+  { name: "NPM", icon: SiNpm, color: "#CB3837" },
+  { name: "Yarn", icon: SiYarn, color: "#2C8EBB" },
+  { name: "Vite", icon: SiVite, color: "#646CFF" },
+];
+
+export { skillsTopRow, skillsBottomRow };

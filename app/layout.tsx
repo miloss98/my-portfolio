@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
+import { ScrollHandler, ScrollToTop } from "./components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,10 +13,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Miloš Stojanović | Frontend Developer",
   description:
     "A software developer specializing in web development and modern technologies.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -26,8 +35,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
       >
+        <ScrollHandler />
+        <ScrollToTop />
         {children}
       </body>
     </html>
