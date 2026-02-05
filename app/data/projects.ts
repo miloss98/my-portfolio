@@ -20,20 +20,20 @@ const projects = [
     technologies: ["React", "Tailwind CSS", "Chart.js", "React-PDF", "Vite"],
     liveUrl: "https://www.rhapsodymedia.com/yourroi",
   },
-  {
-    title: "John Deere Puzzle Game",
-    description:
-      "A memory puzzle game designed for John Deere, made to help children improve their cognitive skills while having fun. The game features colorful graphics, engaging sound effects, and multiple difficulty levels to cater to different age groups.",
-    technologies: ["React", "CSS"],
-    liveUrl: "https://jd-puzzle.netlify.app/",
-  },
-  {
-    title: "Coloring Game for John Deere",
-    description:
-      "An interactive dragon coloring game developed for John Deere, allowing children to unleash their creativity by coloring various dragon illustrations using a palette of vibrant colors and tools with ability to save their artwork.",
-    technologies: ["React", "CSS"],
-    liveUrl: " https://dragon-colouring.netlify.app/",
-  },
+  // {
+  //   title: "John Deere Puzzle Game",
+  //   description:
+  //     "A memory puzzle game designed for John Deere, made to help children improve their cognitive skills while having fun. The game features colorful graphics, engaging sound effects, and multiple difficulty levels to cater to different age groups.",
+  //   technologies: ["React", "CSS"],
+  //   liveUrl: "https://jd-puzzle.netlify.app/",
+  // },
+  // {
+  //   title: "Coloring Game for John Deere",
+  //   description:
+  //     "An interactive dragon coloring game developed for John Deere, allowing children to unleash their creativity by coloring various dragon illustrations using a palette of vibrant colors and tools with ability to save their artwork.",
+  //   technologies: ["React", "CSS"],
+  //   liveUrl: " https://dragon-colouring.netlify.app/",
+  // },
 ];
 
 export { projects };

@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-[80vh]  md:min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
+      className="min-h-[75vh]  md:min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
     >
       <div className="max-w-5xl mx-auto w-full flex  flex-col lg:flex-row gap-12 lg:gap-40 xl:gap-60 items-center">
         <div className="space-y-6">
