@@ -45,7 +45,7 @@ function ExperienceCard({
           <ExternalLink className="w-4 h-4 text-muted-foreground group-hover/link:text-primary transition-colors" />
         </Link>
 
-        <p className="text-muted-foreground leading-relaxed text-base lg:text-lg">
+        <p className="text-muted-foreground leading-relaxed text-base pr-2 md:pr-0 lg:text-lg">
           {description}
         </p>
       </div>
