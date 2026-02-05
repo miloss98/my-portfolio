@@ -11,8 +11,8 @@ export const About = () => {
         </h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed text-base lg:text-lg">
           <p>
-            Frontend Developer with 3.5 years of professional experience
-            building modern, user-friendly web applications. Strong expertise in{" "}
+            Frontend Developer with 4 years of professional experience building
+            modern, user-friendly web applications. Strong expertise in{" "}
             <span className="text-foreground font-medium">React</span>,{" "}
             <span className="text-foreground font-medium">Next.js</span>,{" "}
             <span className="text-foreground font-medium">JavaScript</span>,{" "}

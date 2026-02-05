@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoLinkedin, IoMailOutline } from "react-icons/io5";
@@ -21,27 +21,24 @@ export const Contact = () => {
             hello, feel free to reach out! I look forward to connecting with
             you.
           </p>
-          <div className="pt-4 space-y-4">
+          <div className="pt-4 gap-4 md:gap-4 justify-center md:justify-start items-center flex w-full">
+            <p className="md:flex hidden gap-2 font-normal text-muted-foreground text-sm md:text-base">
+              Get in touch <ArrowRight className="h-6 w-6" />{" "}
+            </p>
             <ContactLink
-              logo={<IoMailOutline className="w-6 h-6" />}
-              value="stojanovic98m@gmail.com"
-              label={"Email"}
-              href="mailto:stojanovic98m@gmail.com"
-              target="_self"
+              logo={<IoLogoGithub className="w-8 h-8 md:w-7 md:h-7" />}
+              href="https://github.com/miloss98"
+              target="_blank"
             />
             <ContactLink
-              logo={<IoLogoLinkedin className="w-6 h-6" />}
-              value="linkedin.com/in/miloss98/"
-              label={"LinkedIn"}
+              logo={<IoLogoLinkedin className="w-8 h-8 md:w-7 md:h-7" />}
               href="https://www.linkedin.com/in/miloss98/"
               target="_blank"
             />
             <ContactLink
-              logo={<IoLogoGithub className="w-6 h-6" />}
-              value="github.com/miloss98"
-              label={"GitHub"}
-              href="https://github.com/miloss98"
-              target="_blank"
+              logo={<IoMailOutline className="w-8 h-8 md:w-7 md:h-7" />}
+              href="mailto:stojanovic98m@gmail.com"
+              target="_self"
             />
           </div>
         </div>
@@ -52,14 +49,10 @@ export const Contact = () => {
 
 function ContactLink({
   logo,
-  label,
-  value,
   href,
   target,
 }: {
   logo: React.ReactNode;
-  label: string;
-  value: string;
   href: string;
   target: string;
 }) {
@@ -69,16 +62,7 @@ function ContactLink({
       className="text-sm group md:text-base text-foreground hover:text-primary transition-colors flex"
       target={target}
     >
-      <div className="flex w-full items-center justify-between py-3 border-b border-border">
-        <span className="md:flex group-hover:text-primary hidden text-base text-muted-foreground">
-          {label}
-        </span>
-        <div className="md:hidden flex p-2 rounded-lg text-primary">{logo}</div>
-        <span className="text-base  text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
-          {value}
-          <ExternalLink className="ml-2 w-4 h-4 text-muted-foreground group-hover:text-primary transition-transform" />
-        </span>
-      </div>
+      <div className="flex p-2 rounded-lg text-primary">{logo}</div>
     </Link>
   );
 }
