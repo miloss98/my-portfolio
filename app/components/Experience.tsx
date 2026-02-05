@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { experiences } from "../data";
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export const Experience = () => {
   return (
@@ -8,7 +8,7 @@ export const Experience = () => {
       id="experience"
       className="px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
     >
-      <div className="max-w-5xl mx-auto space-y-12">
+      <div className="max-w-5xl mx-auto space-y-6 md:space-y-12">
         <h2 className="text-base md:text-lg lg:text-xl font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />
           Experience
@@ -39,13 +39,13 @@ function ExperienceCard({
         <Link
           href={url}
           target="_blank"
-          className="group/link inline-flex items-center gap-4 text-foreground font-medium hover:text-primary transition-colors text-sm md:text-base lg:text-lg"
+          className="group/link inline-flex items-center gap-4 text-foreground font-medium hover:text-primary transition-colors text-base lg:text-lg"
         >
           {title} · {company}
           <ExternalLink className="w-4 h-4 text-muted-foreground group-hover/link:text-primary transition-colors" />
         </Link>
 
-        <p className="text-muted-foreground text-sm leading-relaxed md:text-base">
+        <p className="text-muted-foreground leading-relaxed text-base lg:text-lg">
           {description}
         </p>
       </div>

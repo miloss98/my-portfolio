@@ -2,7 +2,7 @@ const certificates = [
   {
     id: 1,
     name: "Responsive Web Design",
-    issuer: "freeCodeCam",
+    issuer: "freeCodeCamp",
     date: "2021",
     link: "https://www.freecodecamp.org/certification/stojanovic98m/responsive-web-design",
   },

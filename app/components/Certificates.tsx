@@ -4,8 +4,11 @@ import { ExternalLink } from "lucide-react";
 
 export function Certificates() {
   return (
-    <section id="certificates" className="px-6 md:px-12 lg:px-24 py-20">
-      <div className="max-w-5xl mx-auto space-y-8">
+    <section
+      id="certificates"
+      className="px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
+    >
+      <div className="max-w-5xl mx-auto space-y-6 md:space-y-12">
         <h2 className="text-base md:text-lg lg:text-xl font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />
           Certificates
@@ -17,16 +20,16 @@ export function Certificates() {
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-5 rounded-lg border border-border bg-card hover:border-primary/50 transition-colors"
+              className="group p-5 min-h-32 rounded-lg border border-border bg-card hover:border-primary/50 transition-colors"
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="space-y-2">
-                  <h3 className="font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
+                  <h3 className="font-medium text-lg text-foreground group-hover:text-primary transition-colors leading-snug">
                     {cert.name}
                   </h3>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2 text-base text-muted-foreground">
                     <span>{cert.issuer}</span>
-                    <span className="text-border">|</span>
+                    <span className="text-muted-foreground">|</span>
                     <span>{cert.date}</span>
                   </div>
                 </div>

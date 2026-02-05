@@ -9,7 +9,7 @@ export const Contact = () => {
       id="contact"
       className="px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
     >
-      <div className="max-w-5xl mx-auto space-y-8">
+      <div className="max-w-5xl mx-auto space-y-6 md:space-y-12">
         <h2 className="text-base md:text-lg lg:text-xl font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />
           Contact
@@ -70,11 +70,11 @@ function ContactLink({
       target={target}
     >
       <div className="flex w-full items-center justify-between py-3 border-b border-border">
-        <span className="md:flex group-hover:text-primary hidden text-sm text-muted-foreground">
+        <span className="md:flex group-hover:text-primary hidden text-base text-muted-foreground">
           {label}
         </span>
         <div className="md:hidden flex p-2 rounded-lg text-primary">{logo}</div>
-        <span className="text-sm md:text-base text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
+        <span className="text-base  text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
           {value}
           <ExternalLink className="ml-2 w-4 h-4 text-muted-foreground group-hover:text-primary transition-transform" />
         </span>

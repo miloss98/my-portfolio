@@ -4,12 +4,12 @@ export const About = () => {
       id="about"
       className="px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
     >
-      <div className="max-w-5xl mx-auto space-y-6">
+      <div className="max-w-5xl pr-2 md:pr-0 mx-auto space-y-6 md:space-y-12">
         <h2 className="text-base md:text-lg lg:text-xl font-semibold uppercase tracking-widest text-primary flex items-center gap-4">
           <span className="h-px w-8 bg-primary" />
           About
         </h2>
-        <div className="space-y-4 text-muted-foreground leading-relaxed text-sm md:text-base lg:text-lg">
+        <div className="space-y-4 text-muted-foreground leading-relaxed text-base lg:text-lg">
           <p>
             Frontend Developer with 3.5 years of professional experience
             building modern, user-friendly web applications. Strong expertise in{" "}

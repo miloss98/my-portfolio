@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
+      className="min-h-[80vh]  md:min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
     >
       <div className="max-w-5xl mx-auto w-full flex  flex-col lg:flex-row gap-12 lg:gap-40 xl:gap-60 items-center">
         <div className="space-y-6">
@@ -22,7 +22,7 @@ export const Hero = () => {
               />
             </div>
             <div>
-              <h1 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-balance">
+              <h1 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance">
                 Miloš Stojanović
               </h1>
               <p className="text-center md:text-left text-lg md:text-2xl text-primary font-medium mt-1">
