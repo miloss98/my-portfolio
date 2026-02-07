@@ -59,10 +59,10 @@ function ContactLink({
   return (
     <Link
       href={href}
-      className="text-sm group md:text-base text-foreground hover:text-primary transition-colors flex"
+      className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
       target={target}
     >
-      <div className="flex p-2 rounded-lg text-primary">{logo}</div>
+      <div className="flex rounded-lg text-primary">{logo}</div>
     </Link>
   );
 }
