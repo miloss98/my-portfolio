@@ -5,6 +5,7 @@ const seoMetadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  metadataBase: new URL("https://miloss98.dev"),
   openGraph: {
     title: "Miloš Stojanović — Frontend Developer",
     description:
