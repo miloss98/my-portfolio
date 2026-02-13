@@ -80,6 +80,7 @@ function ProjectCard({
             fill
             className="object-cover object-top transition-opacity duration-300 group-hover:opacity-75"
             priority
+            sizes="100% 100%"
           />
         </div>
 

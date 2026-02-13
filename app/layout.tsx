@@ -2,20 +2,16 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ScrollHandler, ScrollToTop } from "./components";
+import { seoMetadata, structuredData } from "./data";
+import Script from "next/script";
 
 const roboto = Roboto({
-  variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-roboto",
 });
 
-export const metadata: Metadata = {
-  title: "Miloš Stojanović | Frontend Developer",
-  description:
-    "A software developer specializing in web development and modern technologies.",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+export const metadata: Metadata = seoMetadata;
 
 export default function RootLayout({
   children,
@@ -25,6 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
+        <Script
+          id="person-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
         <ScrollHandler />
         <ScrollToTop />
         {children}

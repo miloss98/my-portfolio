@@ -22,23 +22,26 @@ export const Contact = () => {
             you.
           </p>
           <div className="pt-4 gap-4 md:gap-4 justify-center md:justify-start items-center flex w-full">
-            <p className="md:flex hidden gap-2 font-normal text-muted-foreground text-sm md:text-base">
-              Get in touch <ArrowRight className="h-6 w-6" />{" "}
+            <p className="md:flex hidden gap-2 items-center font-normal text-muted-foreground text-sm md:text-base">
+              Get in touch <ArrowRight className="h-5 w-5" />{" "}
             </p>
             <ContactLink
               logo={<IoLogoGithub className="w-8 h-8 md:w-7 md:h-7" />}
               href="https://github.com/miloss98"
               target="_blank"
+              ariaLabel="GitHub Profile"
             />
             <ContactLink
               logo={<IoLogoLinkedin className="w-8 h-8 md:w-7 md:h-7" />}
               href="https://www.linkedin.com/in/miloss98/"
               target="_blank"
+              ariaLabel="LinkedIn Profile"
             />
             <ContactLink
               logo={<IoMailOutline className="w-8 h-8 md:w-7 md:h-7" />}
               href="mailto:stojanovic98m@gmail.com"
               target="_self"
+              ariaLabel="Send Email"
             />
           </div>
         </div>
@@ -51,16 +54,19 @@ function ContactLink({
   logo,
   href,
   target,
+  ariaLabel,
 }: {
   logo: React.ReactNode;
   href: string;
   target: string;
+  ariaLabel: string;
 }) {
   return (
     <Link
       href={href}
       className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
       target={target}
+      aria-label={ariaLabel}
     >
       <div className="flex rounded-lg text-primary">{logo}</div>
     </Link>
