@@ -21,54 +21,48 @@ export const Contact = () => {
             hello, feel free to reach out! I look forward to connecting with
             you.
           </p>
-          <div className="pt-4 gap-4 md:gap-4 justify-center md:justify-start items-center flex w-full">
-            <p className="md:flex hidden gap-2 items-center font-normal text-muted-foreground text-sm md:text-base">
-              Get in touch <ArrowRight className="h-5 w-5" />{" "}
-            </p>
-            <ContactLink
-              logo={<IoLogoGithub className="w-8 h-8 md:w-7 md:h-7" />}
-              href="https://github.com/miloss98"
-              target="_blank"
-              ariaLabel="GitHub Profile"
-            />
-            <ContactLink
-              logo={<IoLogoLinkedin className="w-8 h-8 md:w-7 md:h-7" />}
-              href="https://www.linkedin.com/in/miloss98/"
-              target="_blank"
-              ariaLabel="LinkedIn Profile"
-            />
-            <ContactLink
-              logo={<IoMailOutline className="w-8 h-8 md:w-7 md:h-7" />}
-              href="mailto:stojanovic98m@gmail.com"
-              target="_self"
-              ariaLabel="Send Email"
-            />
+          <div className="flex justify-center md:justify-start pt-4 md:pt-0">
+            <div className="flex flex-col md:flex-row md:items-center w-max md:gap-4">
+              <p className="md:flex hidden gap-2 items-center font-normal text-muted-foreground text-sm md:text-base">
+                Get in touch <ArrowRight className="h-5 w-5" />{" "}
+              </p>
+              <a
+                href="/Milos Stojanovic CV.pdf"
+                download="Milos Stojanovic CV.pdf"
+                className="bg-primary text-center font-medium text-black px-4 py-2 rounded-md hover:opacity-80 transition"
+              >
+                Download CV
+              </a>
+              <div className="flex justify-center md:justify-start items-center gap-2 pt-4 md:pt-0">
+                <Link
+                  href="https://github.com/miloss98"
+                  className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
+                  aria-label="GitHub"
+                  target="_blank"
+                >
+                  <IoLogoGithub className="w-8 h-8 md:w-7 md:h-7" />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/miloss98/"
+                  className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                >
+                  <IoLogoLinkedin className="w-8 h-8 md:w-7 md:h-7" />
+                </Link>
+                <Link
+                  href="mailto:stojanovic98m@gmail.com"
+                  className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
+                  aria-label="Email"
+                  target="_self"
+                >
+                  <IoMailOutline className="w-8 h-8 md:w-7 md:h-7" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
-function ContactLink({
-  logo,
-  href,
-  target,
-  ariaLabel,
-}: {
-  logo: React.ReactNode;
-  href: string;
-  target: string;
-  ariaLabel: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
-      target={target}
-      aria-label={ariaLabel}
-    >
-      <div className="flex rounded-lg text-primary">{logo}</div>
-    </Link>
-  );
-}

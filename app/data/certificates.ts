@@ -37,6 +37,15 @@ const certificates = [
     date: "2024",
     link: "https://www.udemy.com/certificate/UC-af2fee83-a87b-4be2-a91f-8ce8a3291ab8/",
   },
+  {
+    id: 5,
+    name: "Clean Code",
+    issuer: "Udemy",
+    issuerIcon: SiUdemy,
+    issuerIconColor: "#A435F0",
+    date: "2026",
+    link: "https://www.udemy.com/certificate/UC-53793003-929e-4232-8eae-524313b12bad/",
+  },
 ];
 
 export { certificates };

@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-[75vh]  md:min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
+      className="min-h-[75vh] md:min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20"
     >
       <div className="max-w-5xl mx-auto w-full flex  flex-col lg:flex-row gap-12 lg:gap-40 xl:gap-60 items-center">
         <div className="space-y-6">
@@ -34,31 +34,42 @@ export const Hero = () => {
             I build accessible, user-focused web applications using modern
             frontend technologies.
           </p>
-          <div className="flex justify-center md:justify-start items-center gap-4 pt-4">
-            <Link
-              href="https://github.com/miloss98"
-              className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
-              aria-label="GitHub"
-              target="_blank"
-            >
-              <IoLogoGithub className="w-8 h-8 md:w-7 md:h-7" />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/miloss98/"
-              className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
-              aria-label="LinkedIn"
-              target="_blank"
-            >
-              <IoLogoLinkedin className="w-8 h-8 md:w-7 md:h-7" />
-            </Link>
-            <Link
-              href="mailto:stojanovic98m@gmail.com"
-              className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
-              aria-label="Email"
-              target="_self"
-            >
-              <IoMailOutline className="w-8 h-8 md:w-7 md:h-7" />
-            </Link>
+          <div className="flex justify-center md:justify-start">
+            <div className="flex flex-col w-max">
+              <a
+                href="/Milos Stojanovic CV.pdf"
+                download="Milos Stojanovic CV.pdf"
+                className="bg-primary text-center font-medium text-black px-4 py-2 rounded-md hover:opacity-80 transition"
+              >
+                Download CV
+              </a>
+              <div className="flex justify-center md:justify-start items-center gap-2 pt-4">
+                <Link
+                  href="https://github.com/miloss98"
+                  className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
+                  aria-label="GitHub"
+                  target="_blank"
+                >
+                  <IoLogoGithub className="w-8 h-8 md:w-7 md:h-7" />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/miloss98/"
+                  className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                >
+                  <IoLogoLinkedin className="w-8 h-8 md:w-7 md:h-7" />
+                </Link>
+                <Link
+                  href="mailto:stojanovic98m@gmail.com"
+                  className="p-2 rounded-lg text-primary hover:bg-secondary transition-colors"
+                  aria-label="Email"
+                  target="_self"
+                >
+                  <IoMailOutline className="w-8 h-8 md:w-7 md:h-7" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <nav className="hidden lg:flex flex-col items-start gap-4">
