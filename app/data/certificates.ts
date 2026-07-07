@@ -46,8 +46,19 @@ const certificates = [
     date: "2026",
     link: "https://www.udemy.com/certificate/UC-53793003-929e-4232-8eae-524313b12bad/",
   },
+
   {
     id: 6,
+    name: "SQL and PostgreSQL: The Complete Developer's Guide",
+    issuer: "Udemy",
+    issuerIcon: SiUdemy,
+    issuerIconColor: "#A435F0",
+    date: "2026",
+    link: "https://www.udemy.com/certificate/UC-cefcf1e9-45dc-4755-a8b5-504b6aab6b3f/",
+  },
+
+  {
+    id: 7,
     name: "Claude Code in Action",
     issuer: "Anthropic",
     issuerIcon: SiAnthropic,
@@ -56,7 +67,7 @@ const certificates = [
     link: "https://verify.skilljar.com/c/e7cm8gan3w3b",
   },
   {
-    id: 7,
+    id: 8,
     name: "Claude code 101",
     issuer: "Anthropic",
     issuerIcon: SiAnthropic,
