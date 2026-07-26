@@ -37,8 +37,8 @@ export const Hero = () => {
           <div className="flex justify-center md:justify-start">
             <div className="flex flex-col w-max">
               <a
-                href="/Milos Stojanovic CV.pdf"
-                download="Milos Stojanovic CV.pdf"
+                href="/Milos_Stojanovic_CV.pdf"
+                download="Milos_Stojanovic_CV.pdf"
                 className="bg-primary text-center font-medium text-black px-4 py-2 rounded-md hover:opacity-80 transition"
               >
                 Download CV

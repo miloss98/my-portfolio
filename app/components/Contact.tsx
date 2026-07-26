@@ -27,8 +27,8 @@ export const Contact = () => {
                 Get in touch <ArrowRight className="h-5 w-5" />{" "}
               </p>
               <a
-                href="/Milos Stojanovic CV.pdf"
-                download="Milos Stojanovic CV.pdf"
+                href="/Milos_Stojanovic_CV.pdf"
+                download="Milos_Stojanovic_CV.pdf"
                 className="bg-primary text-center font-medium text-black px-4 py-2 rounded-md hover:opacity-80 transition"
               >
                 Download CV
