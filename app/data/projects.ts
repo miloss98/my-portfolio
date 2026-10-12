@@ -24,6 +24,14 @@ const projects = [
     liveUrl: "https://www.rhapsodymedia.com/",
   },
   {
+    title: "Invoice Generator",
+    image: "/project-images/invoice-generator.webp",
+    description:
+      "Invoice Generator is a client-side invoice builder for freelancers. You fill in your business details, client, line items, payment info and a typed signature, and a live preview updates as you type. It exports a clean, one-page, black-and-white A4 PDF with selectable text and full support for diacritics (ć, č, š, ž, đ).",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "react-pdf"],
+    liveUrl: "https://invoice-generator-one-zeta.vercel.app/",
+  },
+  {
     title: "Ceros Website",
     image: "/project-images/ceros-website.webp",
     description:
@@ -36,7 +44,7 @@ const projects = [
     image: "/project-images/roi-calculator.webp",
     description:
       "Small application that calculates the return on investment (ROI) for photo retouching services based on various input parameters. Results are displayed using interactive charts and can be exported as a PDF report.",
-    technologies: ["React", "Tailwind CSS", "Chart.js", "React-PDF", "Vite"],
+    technologies: ["React", "Tailwind CSS", "Chart.js", "react-pdf"],
     liveUrl: "https://www.rhapsodymedia.com/yourroi",
   },
   // {
