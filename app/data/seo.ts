@@ -1,15 +1,15 @@
 const seoMetadata = {
-  title: "Miloš Stojanović — Frontend Developer | React & Next.js",
+  title: "Miloš Stojanović — Full-Stack Developer | React, Next.js & Node.js",
   description:
-    "Frontend Developer with 3.5 years of experience building modern, accessible web applications using React, Next.js, JavaScript, and TypeScript.",
+    "Full-Stack Developer with 4+ years of professional experience building fast, accessible web applications with React, Next.js and TypeScript — and the APIs behind them with Node.js, Express and PostgreSQL.",
   icons: {
     icon: "/favicon.ico",
   },
   metadataBase: new URL("https://miloss98.dev"),
   openGraph: {
-    title: "Miloš Stojanović — Frontend Developer",
+    title: "Miloš Stojanović — Full-Stack Developer",
     description:
-      "Frontend Developer specializing in React, Next.js, JavaScript, and TypeScript. Focused on clean code and great user experience.",
+      "Full-Stack Developer: React, Next.js, TypeScript · Node.js, Express, PostgreSQL. 4+ years building fast, accessible web apps. Open to remote & EU roles.",
     url: "https://miloss98.dev",
     siteName: "Miloš Stojanović Portfolio",
     images: [
@@ -17,7 +17,7 @@ const seoMetadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Miloš Stojanović — Frontend Developer",
+        alt: "Miloš Stojanović — Full-Stack Developer",
       },
     ],
     locale: "en_US",
@@ -25,9 +25,9 @@ const seoMetadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Miloš Stojanović — Frontend Developer",
+    title: "Miloš Stojanović — Full-Stack Developer",
     description:
-      "Frontend Developer specializing in React, Next.js, JavaScript, and TypeScript.",
+      "Full-Stack Developer: React, Next.js, TypeScript · Node.js, Express, PostgreSQL.",
     images: ["/og-image.jpg"],
   },
   robots: {

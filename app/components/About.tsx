@@ -11,18 +11,25 @@ export const About = () => {
         </h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed text-base lg:text-lg">
           <p>
-            Frontend Developer with 4 years of professional experience building
-            modern, user-friendly web applications. Strong expertise in{" "}
+            Full-Stack Developer with 4+ years of professional experience
+            building fast, accessible web applications with{" "}
             <span className="text-foreground font-medium">React</span>,{" "}
             <span className="text-foreground font-medium">Next.js</span>,{" "}
-            <span className="text-foreground font-medium">JavaScript</span>,{" "}
             <span className="text-foreground font-medium">TypeScript</span> and{" "}
             <span className="text-foreground font-medium">Tailwind CSS</span>,
-            with a focus on clean, maintainable, and scalable code. Proven
-            experience collaborating closely with designers and backend
-            developers to deliver high-quality products on time. Proactive,
-            detail-oriented, and continuously learning, with a strong passion
-            for creating reliable and engaging user experiences.
+            and, more recently, the backends behind them with{" "}
+            <span className="text-foreground font-medium">Node.js</span>,{" "}
+            <span className="text-foreground font-medium">Express</span>,{" "}
+            <span className="text-foreground font-medium">Prisma</span> and{" "}
+            <span className="text-foreground font-medium">PostgreSQL</span>.
+          </p>
+          <p>
+            At Rhapsody Media (UK) I built the company website from scratch,
+            raised Lighthouse performance from ~60 to ~90 and shipped features
+            used by 500+ users. I care about clean, strictly typed, maintainable
+            code, work closely with designers and backend developers, and use
+            AI-assisted development (Claude Code) every day as a pair
+            programmer: I own the decisions and review every change.
           </p>
         </div>
       </div>

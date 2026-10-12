@@ -26,13 +26,13 @@ export const Hero = () => {
                 Miloš Stojanović
               </h1>
               <p className="text-center md:text-left text-lg md:text-2xl text-primary font-medium mt-1">
-                Frontend Developer
+                Full-Stack Developer
               </p>
             </div>
           </div>
           <p className="text-muted-foreground text-center md:text-left text-lg leading-relaxed max-w-lg">
-            I build accessible, user-focused web applications using modern
-            frontend technologies.
+            I build fast, accessible web apps with React and Next.js, and the
+            APIs behind them with Node.js and PostgreSQL.
           </p>
           <div className="flex justify-center md:justify-start">
             <div className="flex flex-col w-max">

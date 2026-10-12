@@ -15,14 +15,14 @@ import {
   SiStrapi,
   SiSanity,
   SiGithub,
-  SiNpm,
-  SiYarn,
   SiVite,
   SiJest,
-  SiFastapi,
   SiPostgresql,
   SiRedux,
   SiGraphql,
+  SiNodedotjs,
+  SiExpress,
+  SiPrisma,
 } from "react-icons/si";
 
 const skillsTopRow = [
@@ -41,17 +41,18 @@ const skillsTopRow = [
 ];
 
 const skillsBottomRow = [
+  { name: "Node.js", icon: SiNodedotjs, color: "#5FA04E" },
+  { name: "Express", icon: SiExpress, color: "#FFFFFF" },
+  { name: "Prisma", icon: SiPrisma, color: "#FFFFFF" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
   { name: "Redux", icon: SiRedux, color: "#764ABC" },
   { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
   { name: "Jest", icon: SiJest, color: "#C21325" },
   { name: "Chart.js", icon: SiChartdotjs, color: "#FF6384" },
   { name: "Strapi", icon: SiStrapi, color: "#4945FF" },
   { name: "Sanity", icon: SiSanity, color: "#F03E2F" },
-  { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+  // { name: "FastAPI", icon: SiFastapi, color: "#009688" },
   { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
-  { name: "NPM", icon: SiNpm, color: "#CB3837" },
-  { name: "Yarn", icon: SiYarn, color: "#2C8EBB" },
   { name: "Vite", icon: SiVite, color: "#646CFF" },
 ];
 

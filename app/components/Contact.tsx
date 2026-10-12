@@ -16,10 +16,10 @@ export const Contact = () => {
         </h2>
         <div className="space-y-6">
           <p className="text-white md:text-base text-base lg:text-lg leading-relaxed ">
-            I&apos;m currently open to new job opportunities and collaborations.
-            Whether you have a project in mind, a question, or just want to say
-            hello, feel free to reach out! I look forward to connecting with
-            you.
+            I&apos;m currently open to full-time, contract and freelance roles
+            as a Full-Stack or Frontend Developer: remote, EU-based, or
+            on-site/hybrid in Belgrade and Novi Sad. Have a role, a project or a
+            question? Feel free to reach out, I&apos;d love to hear from you.
           </p>
           <div className="flex justify-center md:justify-start pt-4 md:pt-0">
             <div className="flex flex-col md:flex-row md:items-center w-max md:gap-4">

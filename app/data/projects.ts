@@ -1,14 +1,16 @@
 const projects = [
   {
     title: "GarageLog",
-    image: "/project-images/garage-log.webp",
+    image: "/project-images/garagelogv2.webp",
     description:
-      "A full-stack car maintenance tracker app, built with Next.js 16, Supabase, TypeScript, and TanStack Query.",
+      "A full-stack car maintenance tracker on my own REST API (Express, Prisma, PostgreSQL): service reminders by date or mileage, an expenses dashboard, and a one-click demo with self-cleaning accounts. Interactive API docs, light/dark mode and an app-like mobile layout.",
     technologies: [
       "Next.js",
       "TypeScript",
-      "Tailwind CSS",
-      "Supabase",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
       "TanStack Query",
     ],
     liveUrl: "https://garage-log.vercel.app/",
